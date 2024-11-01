@@ -16,5 +16,10 @@ def create_view(request):
     context['form'] = form
     return render(request, 'create_view.html', context)
 
+def list_view(request):
+    context ={}
+    context["dataset"]= vehicle.objects.all()
+    
+
 
 
